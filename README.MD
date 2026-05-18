@@ -1,81 +1,137 @@
-<div align="center">
+# 🏎️ Formula 1 API
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
-  <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
+Projeto desenvolvido durante o desafio da DIO com foco na criação de uma API utilizando Node.js e TypeScript. A aplicação foi baseada no projeto disponibilizado pelo especialista, permitindo praticar conceitos importantes de backend, organização de rotas, manipulação de dados e estruturação de aplicações sem frameworks robustos.
 
-</div>
+---
 
-<br />
+# 🚀 Tecnologias Utilizadas
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+- Node.js
+- TypeScript
+- HTTP nativo
+- tsx
+- tsup
 
-</div>
+---
 
-# 🚀 Technologies
+# 📚 Objetivos do Projeto
 
-This code source was developed with the following items:
+- Desenvolver uma API REST
+- Trabalhar com rotas HTTP
+- Organizar o projeto em camadas
+- Aplicar conceitos de TypeScript
+- Fortalecer conhecimentos em backend
+- Melhorar a estrutura do projeto original
 
-### 📦 Dependencies
+---
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
-
-### 📄 Files
-
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
-
-### ⚡ Scripts
-
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
-
-# 👨‍💻 How To Use
-
-click in **[Use this template]** OR
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
+# 📁 Estrutura do Projeto
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
-
-# Go into the repository
-$ cd node-blue-boilerplate
-
-# Install dependencies
-$ npm install
+src/
+├── controllers/
+├── services/
+├── repositories/
+├── models/
+├── routes/
+└── server.ts
 ```
 
-## Author
+---
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+# ⚙️ Como Executar o Projeto
 
-# Credits
+## Clone o repositório
 
-icons by [Pino Lamanna][dribble-icon]
+```bash
+git clone https://github.com/seu-usuario/formula1-api.git
+```
 
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
+## Entre na pasta do projeto
+
+```bash
+cd formula1-api
+```
+
+## Instale as dependências
+
+```bash
+npm install
+```
+
+## Execute o projeto
+
+```bash
+npm run start:dev
+```
+
+---
+
+# 📌 Rotas da API
+
+| Método | Endpoint | Descrição |
+|--------|-----------|------------|
+| GET | /drivers | Lista pilotos |
+| GET | /teams | Lista equipes |
+| GET | /races | Lista corridas |
+| POST | /drivers | Adiciona piloto |
+| PUT | /drivers/:id | Atualiza piloto |
+| DELETE | /drivers/:id | Remove piloto |
+
+---
+
+# 🔥 Funcionalidades
+
+- Listagem de pilotos e equipes
+- Cadastro de novos registros
+- Atualização de informações
+- Remoção de dados
+- Estrutura modular
+- API construída com Node.js e TypeScript
+
+---
+
+# 🛠️ Melhorias Futuras
+
+- [ ] Banco de dados
+- [ ] Docker
+- [ ] Deploy online
+- [ ] Testes automatizados
+- [ ] Swagger
+- [ ] Autenticação JWT
+
+---
+
+# 🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto, foi possível compreender melhor o funcionamento de APIs REST utilizando Node.js e TypeScript. A construção da aplicação ajudou a praticar conceitos importantes como rotas HTTP, organização em camadas, manipulação de dados e boas práticas de desenvolvimento backend. Além disso, o projeto contribuiu para o fortalecimento do portfólio profissional no GitHub.
+
+---
+
+# 📷 Preview do Projeto
+
+Adicione prints ou gifs aqui.
+
+---
+
+# 🔗 Links Úteis
+
+- Repositório original:
+https://github.com/digitalinnovationone/node-formula-1
+
+- Node.js:
+https://nodejs.org/
+
+- TypeScript:
+https://www.typescriptlang.org/
+
+- DIO:
+https://www.dio.me/
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido por Seu Nome 🚀
 [tsup-npm]: https://www.npmjs.com/package/tsup
 [@types/node-npm]: https://www.npmjs.com/package/@types/node
